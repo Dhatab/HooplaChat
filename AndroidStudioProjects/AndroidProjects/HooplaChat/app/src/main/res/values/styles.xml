@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Light theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#CC0000</item>
+        <item name="colorPrimaryDark">#800000</item>
+        <item name="colorAccent">#258BD6</item>
+        <item name="colorBackground">#FAFAFA</item>
+        <item name="color_CardBackground">#F6F6F6</item>
+        <item name="colorTitleText">#258BD6</item>
+        <item name="colorContentText">#999DA4</item>
+
+        <item name="colorAccentLight">#93dcfe</item>
+        <item name="colorAccentDark">#2ebcfc</item>
+        <item name="colorPrimaryText">#212121</item>
+        <item name="colorSecondaryText">#FFFFFF</item>
+        <item name="colorPrimaryLight">#FFCDD2</item>
+        <item name="colorTextIcons">#757575</item>
+        <item name="colorDivider">#BDBDBD</item>
+        <item name="colorRipple">#33FFFFFF</item>
+        <item name="colorWhite">#FFFFFF</item>
+        <item name="colorBackgroundBox">#f3f3f3</item>
+        <item name="colorStatusOnline">#05df29</item>
+        <item name="colorMessage">#00B167</item>
+        <item name="buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">?attr/colorWhite</item>
+    </style>
+
+</resources>

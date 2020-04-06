@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Messages.MessageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/message_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/message_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/message_profile_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp" />
+
+            <TextView
+                android:id="@+id/message_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/message_profile_image"
+                android:fontFamily="@font/oleo_script"
+                android:layout_centerVertical="true"
+                android:text="Username"
+                android:textColor="?attr/colorSecondaryText"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/message_videocall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_videocam"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_recycler_view"
+        android:layout_below="@id/message_appbar"
+        android:layout_above="@+id/message_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:elevation="8dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/message_edittext"
+            android:background="@drawable/background_messagebox"
+            android:layout_centerInParent="true"
+            android:hint="Enter Message"
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@id/message_send_btn"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/message_send_btn"
+            android:background="@drawable/ic_send_message"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

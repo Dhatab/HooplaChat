@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuItems.SearchAllUsers">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/search_edittext"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_search_icon_black"
+        android:hint="Search Users..."
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_users_recycler_view"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_edittext"/>
+
+
+</RelativeLayout>

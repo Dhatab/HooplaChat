@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuItems.MyAccount">
+
+    <include
+    android:id="@+id/toolbar"
+    layout="@layout/bar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/my_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_display_name"
+            android:layout_centerHorizontal="true"
+            android:text="Username"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/my_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_profile__image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:text="Display Name"
+            android:textColor="?attr/colorSecondaryText"
+            android:textSize="28sp" />
+
+
+            <ImageView
+                android:id="@+id/my_profile__image"
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:elevation="6dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Bio"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/about_bio"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorDivider"/>
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Email"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/about_email"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorDivider"/>
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Phone"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/about_phone"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorDivider"/>
+
+                <TextView
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Location"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/about_location"
+                    android:drawablePadding="8dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorDivider"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorSecondaryText"
+            android:text="LOG OUT" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

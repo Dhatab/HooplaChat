@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Light">
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorPrimaryDark" format="color"/>
+        <attr name="colorAccent" format="color"/>
+        <attr name="colorAccentLight" format="color"/>
+        <attr name="colorAccentDark" format="color"/>
+        <attr name="colorPrimaryText" format="color"/>
+        <attr name="colorSecondaryText" format="color"/>
+        <attr name="colorBackground" format="color"/>
+        <attr name="colorPrimaryLight" format="color"/>
+        <attr name="colorTextIcons" format="color"/>
+        <attr name="colorDivider" format="color"/>
+        <attr name="colorRipple" format="color"/>
+        <attr name="colorWhite" format="color"/>
+        <attr name="colorStatusOnline" format="color"/>
+        <attr name="colorMessage" format="color"/>
+        <attr name="colorBackgroundBox" format="color"/>
+        <attr name="color_CardBackground" format="color"/>
+        <attr name="colorTitleText" format="color"/>
+        <attr name="colorContentText" format="color"/>
+
+    </declare-styleable>
+</resources>

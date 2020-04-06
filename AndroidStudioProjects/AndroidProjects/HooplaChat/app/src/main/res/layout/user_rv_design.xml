@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/user_rv_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/user_rv_displayName"
+        android:layout_toEndOf="@id/user_rv_profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Display Name"
+        android:textColor="?attr/colorTitleText"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_rv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/user_rv_displayName"
+        android:text="Username"
+        android:layout_alignBottom="@id/user_rv_displayName"
+        android:textColor="?attr/colorContentText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/user_rv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user_rv_userName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:text="Date"
+        android:textColor="?attr/colorContentText"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/user_rv_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/user_rv_profile_image"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/user_rv_profile_image"
+        android:text="Last Message"
+        android:layout_toLeftOf="@id/user_rv_unread"
+        android:maxLines="1"
+        android:textColor="?attr/colorContentText"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/user_rv_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/unread_circle"
+        android:text="0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:layout_alignBottom="@id/user_rv_last_message"
+        android:textColor="?attr/colorSecondaryText"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_rv_profile_image"
+        android:layout_marginTop="6dp"
+        android:background="?attr/colorDivider" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_rv_status"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_alignBottom="@id/user_rv_profile_image"
+        android:layout_alignEnd="@id/user_rv_profile_image"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/online_icon"
+        android:visibility="visible" />
+
+</RelativeLayout>
